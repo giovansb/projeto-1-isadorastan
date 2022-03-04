@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+
+body, button, input, select, textarea {
+    font-family: 'Poppins', sans-serif;}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+html, body {
+    margin: 0;
+}
+
+:root {
+    --dark-purple: #190B28;
+    --pinky: #E55381;
+    --less-pink: #EA7E98;
+    --pastel-pink: #EFA9AE;
+    --nav-height: 65px;
+}
+
+body {
+    background-color: var(--dark-purple);
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+button {
+    font-size: 18px;
+    padding: 8px 35px;
+    border: 0;
+    border-radius: 16px;;
+    background-color: var(--pinky);
+    color: white;
+    font-weight: 800;
+}
+
+header{
+    height: calc(100vh - var(--nav-height));
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+    
+}
+
+header .container h2 {
+    color: white;
+}
+
+header .container h1 {
+    color: var(--pastel-pink);
+}
+
+header .container p {
+    color: lightgrey;
+}
+
+header .container button {
+    margin-top: 40px;
+}
+
+nav {
+    height: 65px;
+    display: flex;
+    align-items: center;  
+    font-size: 23px;
+    padding: 0 100px;
+    justify-content: space-between; 
+    position: sticky;
+    top: 0; 
+    background-color: var(--dark-purple);  
+}
+
+
+nav ul a {
+    color: var(--pastel-pink);
+    text-decoration: none;
+    margin: 0 35px;
+    font-size: 24px;
+    
+    
+    
+}
+
+nav .logo {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    width: 150px;  
+    height: 45px;
+    
+
+    
+
+}
+nav .logo .linha {
+    display: flex;
+    height: 45px;
+    width: 6px;
+    background-color: var(--pinky);   
+
+   }
+
+nav .logo .giovana-barbosa {
+    color: white;
+    font-size: 23px;
+    line-height: 23px;
+    margin-left: 3px;
+    font-weight: 300;
+    
+}
+
+section {
+    background-color: blue;
+    height: 1500px;
+}
