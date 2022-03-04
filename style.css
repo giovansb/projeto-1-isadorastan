@@ -85,15 +85,17 @@ nav {
     background-color: var(--dark-purple);  
 }
 
+nav ul {
+    /*background-color: aliceblue;*/
+    width: 100%;    
+    display: flex;
+    justify-content: space-around;
+}
 
 nav ul a {
     color: var(--pastel-pink);
     text-decoration: none;
-    margin: 0 35px;
     font-size: 24px;
-    
-    
-    
 }
 
 nav .logo {
@@ -127,4 +129,91 @@ nav .logo .giovana-barbosa {
 section {
     background-color: blue;
     height: 1500px;
+}
+
+header .container .tab {
+    display: none;
+}
+
+header .container .tab .logo {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    width: 150px;  
+    height: 45px;
+    
+
+    
+
+}
+header .container .tab .logo .linha {
+    display: flex;
+    height: 45px;
+    width: 6px;
+    background-color: var(--pinky);   
+
+   }
+
+header .container .tab .logo .giovana-barbosa {
+    color: white;
+    font-size: 23px;
+    line-height: 23px;
+    margin-left: 3px;
+    font-weight: 300;
+    
+}
+
+/*small-desktop*/
+@media (max-width: 1000px) {
+    header .container {
+        width: 100%;
+    }
+
+    nav {
+        padding: 0 35px;
+    }
+
+    nav ul a{
+        font-size: 16px;
+    }
+    nav ul {
+        padding: 0;
+    }
+}
+
+
+/*tablet*/
+@media (max-width: 767px) {
+    header .container {
+        width: 100%;
+    }
+    nav .logo {
+        display: none;
+    }
+
+    nav {
+        padding: 0 35px;
+    }
+    
+    nav ul {
+        padding: 0;
+    }
+
+    nav a{
+        font-size: 16px;
+    }
+
+    header .container .tab {
+        display: inline;
+    }
+    header .container .tab .logo {
+        margin-bottom: 70px;
+    }
+}
+
+/*smartphone*/
+@media (max-width: 480px) {
+    header .container {
+        padding: 0 40px;
+    }    
 }
