@@ -85,6 +85,10 @@ nav {
     background-color: var(--dark-purple);  
 }
 
+nav svg {
+    display: none;
+}
+
 nav ul {
     /*background-color: aliceblue;*/
     width: 100%;    
@@ -134,6 +138,8 @@ section {
 header .container .tab {
     display: none;
 }
+
+
 
 header .container .tab .logo {
     display: flex;
@@ -216,4 +222,17 @@ header .container .tab .logo .giovana-barbosa {
     header .container {
         padding: 0 40px;
     }    
+
+    nav svg {
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    nav {
+        padding: 0 15px;
+    }
+
+    nav ul a{
+        font-size: 12px;
+    }
 }
