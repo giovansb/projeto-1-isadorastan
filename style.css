@@ -65,8 +65,6 @@ header .container h2 {
     color: white;
 }
 
-
-
 header .container p {
     color: lightgrey;
 }
@@ -261,8 +259,23 @@ header .container .tab .logo .giovana-barbosa {
 .about-me .img-container {
     width: 50%;
     text-align: center;
+    position: relative;
 }
 
 .about-me .img-container img {
     width: 60%;
+}
+
+.about-me .img-container .line {
+    width: calc(60% + 50px);
+    height: calc(100% + 50px);
+    left: calc(50% - 60%/2 - 25px);
+    top: -25px;
+    border: 1px solid var(--pinky);
+    position: absolute;
+}
+
+.about-me .img-container .line.pastel-pink {
+    border: 1px solid var(--pastel-pink);
+    transform: rotate(-3.3deg);
 }
