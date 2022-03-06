@@ -82,6 +82,7 @@ nav {
     justify-content: space-between; 
     position: sticky;
     top: 0; 
+    z-index: 99;
     background-color: var(--dark-purple);  
 }
 
@@ -166,6 +167,57 @@ header .container .tab .logo .giovana-barbosa {
     
 }
 
+
+
+
+
+.about-me {
+    padding: 100px ;
+    display: flex;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .container h1{
+    color: var(--pastel-pink);
+}
+
+.about-me .container p{
+    color: white;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.about-me .img-container img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-me .img-container .line {
+    width: calc(60% + 50px);
+    height: calc(100% + 50px);
+    left: calc(50% - 60%/2 - 25px);
+    top: -25px;
+    border: 1px solid var(--pinky);
+    position: absolute;
+}
+
+.about-me .img-container .line.pastel-pink {
+    border: 1px solid var(--pastel-pink);
+    transform: rotate(-3.3deg);
+}
+
+
+/*Responsividade*/
+
 /*small-desktop*/
 @media (max-width: 1000px) {
     header .container {
@@ -182,8 +234,23 @@ header .container .tab .logo .giovana-barbosa {
     nav ul {
         padding: 0;
     }
-}
 
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me .img-container, .about-me .container {
+        width: 100%;    
+    }
+
+    .about-me .container {
+        padding-right: 0;     
+    }
+
+    .about-me .img-container {
+        margin: 75px 0;        
+    }
+}
 
 /*tablet*/
 @media (max-width: 767px) {
@@ -231,51 +298,14 @@ header .container .tab .logo .giovana-barbosa {
         bottom: 0;
         top: unset;
         width: 100%;
+        
     }
 
     nav ul a{
         font-size: 12px;
     }
-}
 
-.about-me {
-    padding: 100px ;
-    display: flex;
-}
-
-.about-me .container {
-    width: 50%;
-    padding-right: 50px;
-}
-
-.about-me .container h1{
-    color: var(--pastel-pink);
-}
-
-.about-me .container p{
-    color: white;
-}
-
-.about-me .img-container {
-    width: 50%;
-    text-align: center;
-    position: relative;
-}
-
-.about-me .img-container img {
-    width: 60%;
-}
-
-.about-me .img-container .line {
-    width: calc(60% + 50px);
-    height: calc(100% + 50px);
-    left: calc(50% - 60%/2 - 25px);
-    top: -25px;
-    border: 1px solid var(--pinky);
-    position: absolute;
-}
-
-.about-me .img-container .line.pastel-pink {
-    border: 1px solid var(--pastel-pink);
-    transform: rotate(-3.3deg);
+    .about-me {
+        padding: 40px;
+    }
 }
