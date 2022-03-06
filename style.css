@@ -34,6 +34,10 @@ h2 {
     font-size: 24px;
 }
 
+.title-pastel-pink {
+    color: var(--pastel-pink);
+}
+
 button {
     font-size: 18px;
     padding: 8px 35px;
@@ -61,9 +65,7 @@ header .container h2 {
     color: white;
 }
 
-header .container h1 {
-    color: var(--pastel-pink);
-}
+
 
 header .container p {
     color: lightgrey;
@@ -130,10 +132,7 @@ nav .logo .giovana-barbosa {
     
 }
 
-section {
-    background-color: blue;
-    height: 1500px;
-}
+
 
 header .container .tab {
     display: none;
@@ -239,4 +238,31 @@ header .container .tab .logo .giovana-barbosa {
     nav ul a{
         font-size: 12px;
     }
+}
+
+.about-me {
+    padding: 100px ;
+    display: flex;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .container h1{
+    color: var(--pastel-pink);
+}
+
+.about-me .container p{
+    color: white;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+}
+
+.about-me .img-container img {
+    width: 60%;
 }
