@@ -227,13 +227,14 @@ header .container .tab .logo .giovana-barbosa {
 .services {
     text-align: center;
     margin: 180px 0;
+    padding: 0 100px;
 }
 
 .services .services-container {
     display: flex;
     justify-content: space-between;
     margin: 60px auto 0;
-    padding: 0 100px;
+    
     max-width: 1400px;
 }
 
@@ -300,6 +301,28 @@ header .container .tab .logo .giovana-barbosa {
     .about-me .img-container {
         margin: 75px 0;        
     }
+
+    .services {
+        padding: 0;
+    }
+
+    .services .services-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .services .services-container .card-services {
+        height: 394px;
+    }
+
+    .card-services + .card-services {
+        margin-left: 0;
+        margin-top: 20px;
+
+    }
+
 }
 
 /*tablet*/
@@ -358,4 +381,17 @@ header .container .tab .logo .giovana-barbosa {
     .about-me {
         padding: 40px;
     }
+    .services {
+        margin: 70px 0;
+    }
+
+    .services .services-container{
+        padding: 0 20px;
+    }
+
+    .services .services-container .card-services {
+        max-width: 320px;
+        padding: 40px 20px;
+    }
+
 }
