@@ -274,7 +274,11 @@ header .container .tab .logo .giovana-barbosa {
 .portfolio {
     padding: 0 100px;
     text-align: center;
-    background: url('pinky.png');
+    background: url('back_portfolio13.jpg');
+}
+
+.portfolio .portfolio-title {
+    
 }
 
 .portfolio .portfolio-container .portfolio-card {
