@@ -230,7 +230,7 @@ header .container .tab .logo .giovana-barbosa {
     padding: 0 100px;
 }
 
-.services .services-container {
+.services .services-container, .portfolio .portfolio-container {
     display: flex;
     justify-content: space-between;
     margin: 60px auto 0;
@@ -266,6 +266,27 @@ header .container .tab .logo .giovana-barbosa {
 .card-services + .card-services {
     margin-left: 10px;
 }
+
+.services .services-container .card-services h2 {
+    font-weight: 400;
+}
+
+.portfolio {
+    padding: 0 100px;
+    text-align: center;
+    background: url('pinky.png');
+}
+
+.portfolio .portfolio-container .portfolio-card {
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(42px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 16px;
+}
+
+
 
 /*Responsividade*/
 
@@ -394,4 +415,7 @@ header .container .tab .logo .giovana-barbosa {
         padding: 40px 20px;
     }
 
+    .services .services-container .card-services svg {
+        min-width: 90px;
+        min-height: 90px;
 }
