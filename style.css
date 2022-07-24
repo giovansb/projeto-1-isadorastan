@@ -274,7 +274,10 @@ header .container .tab .logo .giovana-barbosa {
 .portfolio {
     padding: 0 100px;
     text-align: center;
-    background: url('back_portfolio13.jpg');
+    background: url('backback.jpg');
+    background-size: 100%;
+    margin-bottom: 100px;
+
 }
 
 .portfolio .portfolio-title {
@@ -282,15 +285,57 @@ header .container .tab .logo .giovana-barbosa {
 }
 
 .portfolio .portfolio-container .portfolio-card {
-    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(25, 11, 40, 1) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 0px 4px 24px -1px rgba(25, 11, 40, 1);
     backdrop-filter: blur(42px);
     /* Note: backdrop-filter has minimal browser support */
 
     border-radius: 16px;
+    max-width: 360px;
+    border: 1px solid white;
+    text-align: left;
+    padding: 50px 25px;
 }
 
 
+
+.portfolio .portfolio-container .portfolio-card .img-container {
+    margin: 0 25px 50px;
+}
+
+.portfolio .portfolio-container .portfolio-card .img-container img {
+    width: 100%;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container {
+    margin-bottom: 20px;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul{
+    display: flex;
+
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul li {
+    color: var(--pinky);
+    border: 1px solid var(--pinky);
+    border-radius: 16px;
+    padding: 3px 15px;
+}
+
+.portfolio .portfolio-container .portfolio-card p {
+    margin: 0;
+}
+
+.portfolio-card + .portfolio-card {
+    margin-left: 10px;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul li + li {
+    margin-left: 10px;
+}
 
 /*Responsividade*/
 
