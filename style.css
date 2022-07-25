@@ -374,11 +374,13 @@ header .container .tab .logo .giovana-barbosa {
 .curriculum{
     padding: 0 100px;
     text-align: center;
+    
 }
 
 .curriculum .container {
     display: flex;
-    margin: 50px 0;
+    margin: 50px auto;
+    max-width: 1200px;
 }
 
 .curriculum .container .content {
@@ -458,7 +460,16 @@ header .container .tab .logo .giovana-barbosa {
         height: 100%;
     }
 
-    
+    .curriculum .container {
+        flex-wrap: wrap;
+    }
+
+    .curriculum .container .curriculum-img {
+        display: block;
+        margin: 0 auto 50px;
+        width: 100%;
+        max-width: 520px;
+    }
 
 }
 
@@ -488,6 +499,11 @@ header .container .tab .logo .giovana-barbosa {
     }
     header .container .tab .logo {
         margin-bottom: 70px;
+    }
+
+    .curriculum .container .content .curriculum-info {
+        grid-template-columns: 100px auto;
+        line-break: anywhere;
     }
 }
 
@@ -546,4 +562,15 @@ header .container .tab .logo .giovana-barbosa {
     .portfolio .portfolio-container {
         margin-top: 70px;
     }
+
+    .curriculum {
+        padding: 0 20px;
+    }
+
+    .curriculum .container .content .curriculum-info {
+        padding: 0 15px;
+        grid-template-columns: 100px auto;
+    }
+
+
 }    
