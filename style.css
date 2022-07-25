@@ -18,6 +18,7 @@ html, body {
     --pinky: #E55381;
     --less-pink: #EA7E98;
     --pastel-pink: #EFA9AE;
+    --medium-purple: #26103C;
     --nav-height: 65px;
     --card: #4A4353;
 }
@@ -55,6 +56,20 @@ button {
     background-color: var(--pinky);
     color: white;
     font-weight: 800;
+}
+
+.secondary-button {
+    background-color: var(--medium-purple);
+    border: 1px solid var(--pastel-pink);
+    color: var(--pinky);
+    font-weight: bold;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.secondary-button img {
+    margin-right: 15px;
 }
 
 header{
@@ -323,7 +338,7 @@ header .container .tab .logo .giovana-barbosa {
         position: absolute;
 
         transform: rotate(-1.93deg);
-    }
+ 
 }
 
 .portfolio .portfolio-container .portfolio-card .language-container {
@@ -354,6 +369,33 @@ header .container .tab .logo .giovana-barbosa {
 
 .portfolio .portfolio-container .portfolio-card .language-container ul li + li {
     margin-left: 10px;
+}
+
+.curriculum{
+    padding: 0 100px;
+    text-align: center;
+}
+
+.curriculum .container {
+    display: flex;
+    margin: 50px 0;
+}
+
+.curriculum .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.curriculum .container .content .curriculum-info{
+    display: grid;
+    grid-template-columns: 150px auto;
+    text-align: left;
+    gap: 1rem;
+    color: white;
+    margin-bottom: 50px;
 }
 
 /*Responsividade*/
@@ -415,6 +457,8 @@ header .container .tab .logo .giovana-barbosa {
     .portfolio {
         height: 100%;
     }
+
+    
 
 }
 
