@@ -12,6 +12,10 @@ html, body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --dark-purple: #190B28;
     --pinky: #E55381;
