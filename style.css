@@ -8,7 +8,6 @@ body, button, input, select, textarea {
 }
 
 
-
 html, body {
     margin: 0;
 }
@@ -467,7 +466,7 @@ header .container .tab .logo .giovana-barbosa {
     .curriculum .container .curriculum-img {
         display: block;
         margin: 0 auto 50px;
-        width: 100%;
+        width: 100vw;
         max-width: 520px;
     }
 
@@ -569,8 +568,12 @@ header .container .tab .logo .giovana-barbosa {
 
     .curriculum .container .content .curriculum-info {
         padding: 0 15px;
+        margin: auto;
         grid-template-columns: 100px auto;
     }
 
-
+    .curriculum .container .curriculum-img {
+        width: 90vw;
+        max-width: 400px;
+    }
 }    
